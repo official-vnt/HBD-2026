@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Message For You</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="card.css">
+</head>
+<body>
+    <!-- Back to Scrapbook Button -->
+    <a href="index.html" class="back-btn"><i class="fa-solid fa-arrow-left"></i> Back to Scrapbook</a>
+
+    <!-- Instruction -->
+    <div class="instruction">
+        <p>Click the card to open <i class="fa-regular fa-hand-pointer"></i></p>
+    </div>
+
+    <!-- 3D Card -->
+    <div class="card-container">
+        <div class="card" id="greeting-card">
+            
+            <!-- The Base (Right Side / Back Cover) -->
+            <div class="book-base">
+                <div class="page-face inside-right">
+                    <img src="assets/middle2.png" alt="Inside Right" onerror="this.src='https://via.placeholder.com/400x600/ffb6c1/ffffff?text=middle2.png'">
+                </div>
+                <div class="page-face outside-back">
+                    <img src="assets/back.png" alt="Back Cover" onerror="this.src='https://via.placeholder.com/400x600/ff9eb5/ffffff?text=back.png'">
+                </div>
+            </div>
+
+            <!-- The Cover (Flips Open) -->
+            <div class="book-cover" id="cover">
+                <div class="page-face outside-front">
+                    <img src="assets/front.png" alt="Front Cover" onerror="this.src='https://via.placeholder.com/400x600/ff9eb5/ffffff?text=front.png'">
+                </div>
+                <div class="page-face inside-left">
+                    <img src="assets/middle1.png" alt="Inside Left" onerror="this.src='https://via.placeholder.com/400x600/ffb6c1/ffffff?text=middle1.png'">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="card.js"></script>
+</body>
+</html>

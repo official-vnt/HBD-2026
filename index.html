@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday My Love</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Inter:wght@300;400;500;600&family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Fairy Lights Background -->
+    <div class="lights-container">
+        <img src="assets/lights.png" alt="" class="lights">
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">my love <i class="fa-solid fa-heart"></i></div>
+        <div class="nav-links">
+            <a href="#home" class="active">Home</a>
+            <a href="#memories">Memories</a>
+            <a href="#letter">Letter</a>
+            <a href="#open-when">Open When</a>
+            <a href="#playlist">Playlist</a>
+            <a href="#countdown">Countdown</a>
+        </div>
+        <div class="nav-actions">
+            <button class="btn-primary" onclick="window.location.href='card.html'">Message for you <i class="fa-regular fa-envelope"></i></button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 class="cursive-text title-large">Happy <br> Birthday</h1>
+                <h2 class="subtitle">My Love <i class="fa-solid fa-heart heart-icon large"></i></h2>
+                <p>You are my today and all of my tomorrows.<br>Made with love, code and countless<br>thoughts about you <i class="fa-solid fa-heart heart-icon small"></i></p>
+                <button class="btn-secondary mt-4">Enter Our World <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+            <div class="hero-scrapbook">
+                <!-- Scattered polaroids -->
+                <div class="polaroid p-1 tilt-left">
+                    <div class="tape top-center"></div>
+                    <div class="photo-wrapper">
+                        <img src="assets/polaroid1.jpg" alt="Us" onerror="this.src='https://via.placeholder.com/200x200/ffb6c1/ffffff?text=Photo+1'">
+                    </div>
+                </div>
+                <div class="polaroid p-2 tilt-right">
+                    <div class="photo-wrapper">
+                        <img src="assets/polaroid2.jpg" alt="Us" onerror="this.src='https://via.placeholder.com/200x200/ffb6c1/ffffff?text=Photo+2'">
+                    </div>
+                </div>
+                <div class="polaroid p-3 tilt-left-slight">
+                    <div class="tape top-left"></div>
+                    <div class="photo-wrapper">
+                        <img src="assets/polaroid3.jpg" alt="Us" onerror="this.src='https://via.placeholder.com/200x200/ffb6c1/ffffff?text=Photo+3'">
+                    </div>
+                </div>
+                <div class="sticky-note n-1">
+                    <p class="kalam-text">You make<br>my heart<br>smile</p>
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <!-- Scattered floating hearts -->
+                <img src="assets/heart-3d.png" alt="" class="scattered-element h-1" onerror="this.style.display='none'">
+                <img src="assets/heart-3d.png" alt="" class="scattered-element h-2" onerror="this.style.display='none'">
+            </div>
+        </section>
+
+        <!-- Memories Section -->
+        <section id="memories" class="memories-section">
+            <div class="section-header">
+                <div>
+                    <h2 class="cursive-text title-medium">memories <i class="fa-regular fa-heart"></i></h2>
+                    <p>Some of my most favourite<br>memories with you <i class="fa-solid fa-heart heart-icon small"></i></p>
+                    <button class="btn-outline mt-3">More Memories <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+            <div class="memories-gallery">
+                <div class="polaroid m-1 with-pin">
+                    <div class="pin"></div>
+                    <div class="photo-wrapper">
+                        <img src="assets/mem1.jpg" alt="Memory" onerror="this.src='https://via.placeholder.com/150x180/ffc0cb/ffffff?text=Mem+1'">
+                    </div>
+                    <p class="caption">You + Me <i class="fa-solid fa-heart heart-icon tiny"></i></p>
+                </div>
+                <div class="polaroid m-2 with-pin tilt-left-slight">
+                    <div class="pin"></div>
+                    <div class="photo-wrapper">
+                        <img src="assets/mem2.jpg" alt="Memory" onerror="this.src='https://via.placeholder.com/150x180/ffc0cb/ffffff?text=Mem+2'">
+                    </div>
+                    <p class="caption">Good times</p>
+                </div>
+                <div class="polaroid m-3 with-tape">
+                    <div class="tape top-center small"></div>
+                    <div class="photo-wrapper">
+                        <img src="assets/mem3.jpg" alt="Memory" onerror="this.src='https://via.placeholder.com/150x180/ffc0cb/ffffff?text=Mem+3'">
+                    </div>
+                    <p class="caption">My favourite <i class="fa-regular fa-heart"></i></p>
+                </div>
+                <div class="polaroid m-4 tilt-right">
+                    <div class="photo-wrapper">
+                        <img src="assets/mem4.jpg" alt="Memory" onerror="this.src='https://via.placeholder.com/150x180/ffc0cb/ffffff?text=Mem+4'">
+                    </div>
+                    <p class="caption">Mie Cutiepie</p>
+                </div>
+                <div class="polaroid m-5 tilt-left">
+                    <div class="photo-wrapper">
+                        <img src="assets/mem5.jpg" alt="Memory" onerror="this.src='https://via.placeholder.com/150x180/ffc0cb/ffffff?text=Mem+5'">
+                    </div>
+                    <p class="caption">Forever us</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Letter & Open When Section -->
+        <section class="split-section">
+            <!-- Letter -->
+            <div id="letter" class="letter-container">
+                <div class="paper">
+                    <h2 class="cursive-text title-medium">a letter for you <i class="fa-regular fa-heart"></i></h2>
+                    <div class="letter-content kalam-text">
+                        <p>Hey my love,</p>
+                        <p>Happy Birthday to the most beautiful soul in this world. You mean everything to me. Thank you for coming into my life and making it so much better. You're my person, my safe place, my happiness.</p>
+                        <p class="highlight cursive-text">I love you more than words can say.</p>
+                    </div>
+                    <img src="assets/heart-3d.png" alt="" class="letter-heart" onerror="this.style.display='none'">
+                </div>
+            </div>
+
+            <!-- Open When -->
+            <div id="open-when" class="open-when-container">
+                <h2 class="cursive-text title-medium text-center">open when... <i class="fa-regular fa-heart"></i></h2>
+                <div class="envelopes-grid">
+                    <div class="envelope env-pink">
+                        <i class="fa-regular fa-heart env-icon"></i>
+                        <p>Open when<br><strong>you miss me</strong></p>
+                    </div>
+                    <div class="envelope env-blue">
+                        <i class="fa-solid fa-cloud env-icon"></i>
+                        <p>Open when<br><strong>you're sad</strong></p>
+                    </div>
+                    <div class="envelope env-purple">
+                        <i class="fa-regular fa-star env-icon"></i>
+                        <p>Open when<br><strong>you need motivation</strong></p>
+                    </div>
+                    <div class="envelope env-lilac">
+                        <i class="fa-solid fa-spa env-icon"></i>
+                        <p>Open when<br><strong>you can't sleep</strong></p>
+                    </div>
+                    <div class="envelope env-yellow wide">
+                        <i class="fa-regular fa-face-smile env-icon"></i>
+                        <p>Open when<br><strong>you want to smile</strong></p>
+                    </div>
+                    <div class="envelope env-lavender wide">
+                        <i class="fa-regular fa-envelope env-icon"></i>
+                        <p>Open when<br><strong>you need a hug</strong></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Countdown & Playlist Section -->
+        <section class="split-section align-items-center">
+            <!-- Countdown -->
+            <div id="countdown" class="countdown-container">
+                <h2 class="cursive-text title-medium">time we've spent together <i class="fa-regular fa-heart"></i></h2>
+                <div class="timer">
+                    <div class="time-box">
+                        <span id="days">0</span>
+                        <p>Days</p>
+                    </div>
+                    <div class="time-box">
+                        <span id="hours">0</span>
+                        <p>Hours</p>
+                    </div>
+                    <div class="time-box">
+                        <span id="minutes">0</span>
+                        <p>Minutes</p>
+                    </div>
+                    <div class="time-box">
+                        <span id="seconds">0</span>
+                        <p>Seconds</p>
+                    </div>
+                </div>
+                <div class="countdown-footer">
+                    <p>Every second with you is a blessing <i class="fa-regular fa-heart"></i></p>
+                </div>
+            </div>
+
+            <!-- Playlist -->
+            <div id="playlist" class="playlist-container">
+                <h2 class="cursive-text title-medium text-center">our song <i class="fa-regular fa-heart"></i></h2>
+                <div class="player">
+                    <div class="record-wrapper">
+                        <div class="record" id="vinyl-record">
+                            <div class="record-label">
+                                <img src="assets/us_center.jpg" alt="" onerror="this.src='https://via.placeholder.com/60/ffb6c1/ffffff?text=Us'">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="song-info">
+                        <h3>Perfect</h3>
+                        <p>Ed Sheeran</p>
+                        <div class="progress-bar">
+                            <span class="time current">0:00</span>
+                            <div class="bar">
+                                <div class="fill" id="progress-fill"></div>
+                            </div>
+                            <span class="time duration">4:23</span>
+                        </div>
+                        <div class="controls">
+                            <button class="ctrl-btn"><i class="fa-solid fa-backward-step"></i></button>
+                            <button class="ctrl-btn play-btn" id="play-pause-btn"><i class="fa-solid fa-play"></i></button>
+                            <button class="ctrl-btn"><i class="fa-solid fa-forward-step"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Hidden Audio Element -->
+                <audio id="bg-audio" loop>
+                    <!-- Replace with your actual music file -->
+                    <source src="assets/our_song.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </section>
+
+        <!-- Footer Scrapbook -->
+        <section class="footer-scrapbook">
+            <div class="hanging-photos">
+                <div class="string"></div>
+                <div class="photo-clip pc-1">
+                    <div class="clip"></div>
+                    <img src="assets/hang1.jpg" alt="" onerror="this.src='https://via.placeholder.com/100/ffb6c1/ffffff'">
+                </div>
+                <div class="photo-clip pc-2">
+                    <div class="clip"></div>
+                    <img src="assets/hang2.jpg" alt="" onerror="this.src='https://via.placeholder.com/100/ffb6c1/ffffff'">
+                </div>
+                <div class="photo-clip pc-3">
+                    <div class="clip"></div>
+                    <img src="assets/hang3.jpg" alt="" onerror="this.src='https://via.placeholder.com/100/ffb6c1/ffffff'">
+                </div>
+            </div>
+
+            <div class="final-quote text-center mt-5">
+                <h2 class="cursive-text title-large">I'd choose you<br>in every universe</h2>
+                <button class="btn-primary mt-3">Today, Tomorrow and Always <i class="fa-regular fa-heart"></i></button>
+            </div>
+
+            <div class="sticky-note n-2">
+                <p class="kalam-text">Thank you for<br>being you. You<br>deserve all the<br>happiness in the<br>world and more.</p>
+                <p class="kalam-text mt-2">I love you endlessly.</p>
+                <p class="kalam-text signature">~ always yours <i class="fa-regular fa-heart"></i></p>
+            </div>
+            <img src="assets/heart-3d.png" alt="" class="scattered-element h-3" onerror="this.style.display='none'">
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-left">
+            <p>Built by your Devloper boyfriend<br>with <i class="fa-solid fa-heart" style="color: #ff4d6d;"></i> and lots of <i class="fa-solid fa-mug-hot"></i></p>
+        </div>
+        <!-- <div class="footer-social"> -->
+            <!-- <a href="#"><i class="fa-brands fa-github"></i></a> -->
+            <!-- <a href="#"><i class="fa-brands fa-instagram"></i></a> -->
+            <!-- <a href="#"><i class="fa-solid fa-music"></i></a> -->
+            <!-- <a href="#"><i class="fa-regular fa-envelope"></i></a> -->
+        <!-- </div> -->
+        <div class="footer-right">
+            <p>For the most amazing<br>girl in the world <i class="fa-solid fa-globe"></i> <i class="fa-solid fa-heart" style="color: #ff4d6d;"></i></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
