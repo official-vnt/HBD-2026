@@ -3,7 +3,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     // 1. Count-Up Timer (from 29-March-2023)
     const startDate = new Date('2023-03-29T00:00:00').getTime();
-    
+
     const daysEl = document.getElementById('days');
     const hoursEl = document.getElementById('hours');
     const minutesEl = document.getElementById('minutes');
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const currentTimeEl = document.querySelector('.time.current');
     const durationEl = document.querySelector('.time.duration');
     const progressBar = document.querySelector('.bar');
-    
+
     let isPlaying = false;
 
     // Toggle Play/Pause
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (audio.duration) {
             const progressPercent = (audio.currentTime / audio.duration) * 100;
             progressFill.style.width = `${progressPercent}%`;
-            
+
             // Format current time
             currentTimeEl.innerText = formatTime(audio.currentTime);
         }
@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const width = progressBar.clientWidth;
         const clickX = e.offsetX;
         const duration = audio.duration;
-        
+
         if (duration) {
             audio.currentTime = (clickX / width) * duration;
         }
@@ -102,7 +102,23 @@ document.addEventListener('DOMContentLoaded', () => {
             setTimeout(() => {
                 env.style.transform = 'translateY(0)';
                 // Here you could add logic to open a modal with a message
-                alert("This would open a sweet message! Add your content here.");
+                alert(`Hey love ❤️
+
+I know there will be moments when you’ll miss me a little extra, so read this whenever that happens.
+
+Even if I’m away, I’m still with you in all the small things — in your smile, your late-night thoughts, your favorite songs, and the moments you randomly think about us.
+
+And honestly? I miss you too.
+More than I usually say.
+
+But distance is just a temporary glitch in our story. One day, all these calls, texts, and countdowns will turn into real hugs, real mornings, and real memories together.
+
+Until then,
+please remember this:
+
+You are deeply loved.
+Always.
+By your cutesa boyfriend ❤️`);
             }, 300);
         });
     });
