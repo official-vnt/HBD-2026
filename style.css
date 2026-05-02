@@ -27,7 +27,11 @@
 
 body {
     background-color: var(--bg-color);
-    background-image: url('https://www.transparenttextures.com/patterns/cream-paper.png');
+    background-image: url('https://www.transparenttextures.com/patterns/cream-paper.png'), url('assets/bg1.png');
+    background-size: auto, cover;
+    background-attachment: scroll, fixed;
+    background-position: top left, center;
+    background-repeat: repeat, no-repeat;
     /* Subtle paper texture */
     color: var(--text-main);
     font-family: 'Inter', sans-serif;
